@@ -1,4 +1,5 @@
 import React from 'react'
+import SingleQuestion from './SingleQuestion';
 
 const Questions = ({ questions }) => {
   return (
@@ -21,3 +22,4 @@ export default Questions
 // - S7-191:Iterate over question parameter/prop. Call map since its array
 // - S7-191:Add question as prop/parameter
 // - S7-191:Add return with pass in func SingleQuestion
+// - S7-191:Import SingleQuestion
