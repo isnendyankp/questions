@@ -8,4 +8,4 @@ const Questions = () => {
 
 export default Questions
 
-// - 
+// - S7-191:Cr8 question component base
