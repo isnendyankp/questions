@@ -3,12 +3,14 @@ import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 
 const SingleQuestion = ({ title, info }) => {
   const [showInfo, setShowInfo] = useState(false);
-  return <article className='question'>
-    <header>
-      <h5>{title}</h5>
-    </header>
-    <p>{info}</p>
-  </article>
+  return (
+    <article className="question">
+      <header>
+        <h5>{title}</h5>
+      </header>
+      {showInfo && <p>{info}</p>}
+    </article>
+  );
 };
 
 export default SingleQuestion;
@@ -20,3 +22,4 @@ export default SingleQuestion;
 // - S7-191:Add article with className question
 // - S7-191:Add header with pass in title inside h5
 // - S7-191:Add info with pass in info
+// - S7-191:pass in  showInfo for state value
