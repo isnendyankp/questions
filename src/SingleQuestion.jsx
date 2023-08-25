@@ -7,7 +7,9 @@ const SingleQuestion = ({ title, info }) => {
     <article className="question">
       <header>
         <h5>{title}</h5>
-        <button className='question-btn' onClick={()=> setShowInfo}></button>
+        <button className="question-btn" onClick={() => setShowInfo(!showInfo)}>
+
+        </button>
       </header>
       {showInfo && <p>{info}</p>}
     </article>
@@ -26,3 +28,4 @@ export default SingleQuestion;
 // - S7-191:pass in  showInfo for state value
 // - S7-191:cr8 button with className question-btn
 // - S7-191:Add onclick with funct for setShowInfo in button
+// - S7-191:Pass in opposite showInfo for onClick button
