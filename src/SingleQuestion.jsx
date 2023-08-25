@@ -8,7 +8,7 @@ const SingleQuestion = ({ title, info }) => {
       <header>
         <h5>{title}</h5>
         <button className="question-btn" onClick={() => setShowInfo(!showInfo)}>
-
+          {showInfo ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </button>
       </header>
       {showInfo && <p>{info}</p>}
@@ -29,3 +29,4 @@ export default SingleQuestion;
 // - S7-191:cr8 button with className question-btn
 // - S7-191:Add onclick with funct for setShowInfo in button
 // - S7-191:Pass in opposite showInfo for onClick button
+// - S7-191:Pass in show info with react icons = {showInfo ? <AiOutlineMinus /> : <AiOutlinePlus />}
